@@ -1,0 +1,1 @@
+export const headerData=[{title:'HOME'},{title:'WORK'},{title:'PROJECTS'},{title:'RESUME'}]
