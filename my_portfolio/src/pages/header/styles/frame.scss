@@ -45,6 +45,17 @@
                 margin-right:0;
             }
         }
+        @media screen and (max-width:400px){
+            align-items: center;
+            flex-direction: column;
+            width:95%;
+            .right_container{
+                // border:1px solid red;
+                width:315px;
+                margin-top: 12px;
+                margin-right:0;
+            }
+        }
     }
     
 }

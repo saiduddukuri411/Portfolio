@@ -1,11 +1,19 @@
 @import "../../../colors.scss";
 
+
+.active_card{
+  border: 1px solid $lightning;
+    .nav_title {
+      color: $lightning;
+    }
+}
 .card {
   width: 90px;
   height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
   transition: $transition;
@@ -15,12 +23,15 @@
     letter-spacing: 0.12rem;
     color: $med_blue;
   }
-  &:hover {
-    border: 1px solid $lightning;
-    h7 {
-      color: $lightning;
+  @media screen and (min-width: 1250px){
+    &:hover {
+      border: 1px solid $lightning;
+      h7 {
+        color: $lightning;
+      }
     }
   }
+  
   @media screen and (max-width: 750px) {
     width: 77px;
     height: 70%;
