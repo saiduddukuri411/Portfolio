@@ -34,7 +34,6 @@
         .title_container {
           width: 90%;
           height: 18px;
-          // border: 1px solid white;
           margin-bottom: 5px;
           display: flex;
           align-items: center;
@@ -57,6 +56,16 @@
               border-top: 0.5px solid $lightning;
               height: 1px;
             }
+          }
+          @media screen and (max-width:850px){
+             .name{
+               font-size: 14px;
+               letter-spacing: 0.14rem;
+               
+             }
+             .lineHolder{
+               width: 35%;
+             }
           }
         }
       }
@@ -82,30 +91,23 @@
           height: 247px;
         }
       }
-      @media screen and (min-width: 480px) and (max-width: 749px) {
-        width: 195px;
-        height: 195px;
+      @media screen and (min-width: 400px) and (max-width: 749px) {
+        width: 220px;
+        height: 220px;
         .backliner {
-          width: 195px;
-          height: 195px;
+          width: 220px;
+          height: 220px;
         }
       }
-      @media screen and (max: 470px) {
-        width: 165px;
-        height: 165px;
+      @media screen and (max-width: 399px) {
+        width: 190px;
+        height: 190px;
         .backliner {
-          width: 165px;
-          height: 165px;
+          width: 190px;
+          height: 190px;
         }
       }
-      // @media screen and (min-width: 680px) and (max-width:1150px){
-      //   width: 190px;
-      //   height: 190px;
-      //   .backliner {
-      //     width: 190px;
-      //     height: 190px;
-      //   }
-      // }
+
       @media screen and (min-width: 1270px) {
         &:hover {
           transform: scale(1.1);
@@ -175,37 +177,130 @@
             }
           }
         }
-        .technologies{
-          width:100%;
-          height: 45px;
+        .technologies {
+          width: 100%;
+          // height: 45px;
           // border:1px solid white;
           margin-top: 10px;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          .tech_cards{
+          .tech_cards {
             // border: 1px solid white;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-left: 5px;
             margin-right: 5px;
-             .right_icon{
-               color: $lightning;
-               font-size: 20px;
-               h7{
-                 font-size: 10px;
-                 letter-spacing: 0.13rem;
-               }
-             }
+            .right_icon {
+              color: $lightning;
+              font-size: 20px;
+              h7 {
+                font-size: 10px;
+                letter-spacing: 0.13rem;
+              }
+            }
           }
-
+        }
+      }
+      @media screen and (min-width: 700px) and (max-width: 1150px) {
+        margin-top: 65px;
+        width: 580px;
+      }
+      @media screen and (min-width: 400px) and (max-width: 699px) {
+        margin-top: 53px;
+        width: 385px;
+        margin-left: 8px;
+        .about_box {
+          .about_title {
+            h1 {
+              font-size: 27px;
+            }
+            .liner {
+              margin-left: 27px;
+              width: 55%;
+            }
+          }
+          .intro {
+            margin-top: 6px;
+            h7 {
+              font-size: 17px;
+              letter-spacing: 0.16rem;
+            }
+          }
+          .content1 {
+            margin-top: 20px;
+            p {
+              font-size: 15px;
+              letter-spacing: 0.17rem;
+            }
+          }
+          .technologies{
+            display: flex;
+            justify-content: start;
+            flex-flow: wrap;
+            // border: 1px solid white;
+            width:100%;
+            .tech_cards{
+               margin: 5px 5px;
+            };
+            
+          }
         }
         
       }
-      @media screen and (min-width:680px) and (max-width:1150px){
-        margin-top: 65px;
-        width:530px;
+      @media screen  and (max-width: 399px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 75px;
+        width: 360px;
+        margin-top: 53px;
+        margin-left: 8px;
+        justify-content: center;
+        .about_box {
+          .about_title {
+            margin-left: 6px;
+            width:92%;
+            h1 {
+              font-size: 24px;
+            }
+            .liner {
+              margin-left: 23px;
+              width: 54%;
+            }
+          }
+          .intro {
+            margin-top: 6px;
+            margin-left: 6px;
+            width:92%;
+            h7 {
+              font-size: 16px;
+              letter-spacing: 0.15rem;
+            }
+          }
+          .content1 {
+            margin-top: 18px;
+            margin-left: 6px;
+            width:95%;
+            p {
+              font-size: 14px;
+              letter-spacing: 0.15rem;
+            }
+          }
+          .technologies{
+            display: flex;
+            justify-content: start;
+            flex-flow: wrap;
+            // border: 1px solid white;
+            width:100%;
+            .tech_cards{
+               margin: 6px 6px;
+            };
+            
+          }
+        }
       }
     }
     @media screen and (min-width: 950px) {

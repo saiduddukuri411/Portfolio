@@ -37,7 +37,7 @@ const Frame = () => {
             <div className="content1">
               <p>
                 I enjoy building things that live on web.In perticular I deal
-                with web apps using <span>React</span>. Beside my education I
+                with web apps using <span>React</span>. Besides my education I
                 also build applications for <span>Purdue University</span>.My
                 passion drives me to work on wide verities of technologies and
                 my goal is to provide performant experience products.
