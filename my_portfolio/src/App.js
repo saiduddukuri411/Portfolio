@@ -3,6 +3,7 @@ import Header from './pages/header/frame';
 import Home from './pages/Home/frame'
 import {BrowserRouter as Router,Route,Switch,Redirect} from 'react-router-dom';
 import Footer from './pages/Footer/frame';
+import Work from './pages/Work/frame';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Router>
        <Header />
        <Switch>
+       <Route path="/work" component={Work} exact={true} />
        <Route path="/" component={Home} exact={true} />
        <Redirect to="/" />
        </Switch>

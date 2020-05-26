@@ -29,43 +29,42 @@ const Frame = () => {
             </div>
             <div className="content1">
               <p>
-                I am passionate software engineer based in
-                Indianapolis.Currently I am pursuing my masters degree from
-                <span>Purdue University</span>.
+                I am a software engineer based in
+                Indianapolis. Currently, I am pursuing my masters degree from&nbsp;<span>Purdue University</span>.
               </p>
             </div>
             <div className="content1">
               <p>
-                I enjoy building things that live on web.In perticular I deal
-                with web apps using <span>React</span>. Besides my education I
-                also build applications for <span>Purdue University</span>.My
-                passion drives me to work on wide verities of technologies and
+                I enjoy building things that live on web.In particular I deal
+                with web apps using <span>React</span>. Besides my education, I
+                also build applications for&nbsp;<span>Purdue</span>. My
+                passion drives me to work on wide varieties of technologies and
                 my goal is to provide performant experience products.
               </p>
             </div>
             <div className="content1">
-              <p>Below are few technologies , I am woking with:</p>
+              <p>Below are a few technologies I am currently woking with:</p>
             </div>
             <div className="technologies">
-              <div class="tech_cards">
+              <div className="tech_cards">
                  <IoMdArrowDropright  className="right_icon" />
-                 <h7>Javascript (ES6)</h7>
+                 <h7>Javascript (ES6+)</h7>
               </div>
-              <div class="tech_cards">
+              <div className="tech_cards">
                  <IoMdArrowDropright  className="right_icon" />
-                 <h7>Htmls , (s)css</h7>
+                 <h7>HTML5 & (S)CSS</h7>
               </div>
-              <div class="tech_cards">
+              <div className="tech_cards">
                  <IoMdArrowDropright  className="right_icon" />
                  <h7>Python</h7>
               </div>
-              <div class="tech_cards">
+              <div className="tech_cards">
                  <IoMdArrowDropright  className="right_icon" />
                  <h7>React</h7>
               </div>
-              <div class="tech_cards">
+              <div className="tech_cards">
                  <IoMdArrowDropright  className="right_icon" />
-                 <h7>Node.js</h7>
+                 <h7>Node JS</h7>
               </div>
             </div>
           </div>

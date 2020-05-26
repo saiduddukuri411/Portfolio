@@ -1,0 +1,187 @@
+@import "../../../colors.scss";
+.frame_container {
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  .work_container {
+    margin-top: 50px;
+    width: 55%;
+    // height: 430px;
+    animation: appearboard 1s;
+    .topic {
+      width: 90%;
+      margin-left: 10px;
+      margin-top: 6px;
+      .bullets {
+        width: 100%;
+        // border: 1px solid white;
+        margin-top: 6px;
+        .point {
+          width: 100%;
+          display: flex;
+          margin-bottom: 12px;
+          .arrow {
+            color: $lightning;
+            margin-right: 5px;
+            .arrow_font {
+              font-size: 13px !important;
+            }
+          }
+          h7 {
+            font-family: $abel_font;
+            font-size: 16px;
+            letter-spacing: 0.13rem;
+          }
+        }
+      }
+      .client {
+        width: 100%;
+        height: 28px;
+
+        display: flex;
+        align-items: center;
+        h7 {
+          font-family: $abel_font;
+          font-size: 16px;
+          letter-spacing: 0.1rem;
+        }
+        a {
+          margin-left: 6px;
+          font-family: $abel_font;
+          font-size: 17px;
+          color: $lightning;
+          letter-spacing: 0.1rem;
+          cursor: pointer;
+          opacity: 0.8;
+          text-decoration: none;
+        }
+      }
+    }
+    .Designation {
+      width: 90%;
+      margin-top: 0px;
+      height: 30px;
+      // border:1px solid white;
+      margin-left: 10px;
+      h7 {
+        font-family: $abel_font;
+        color: $vlite_blue;
+        font-size: 14px;
+        letter-spacing: 0.11rem;
+      }
+    }
+    .companyTitle {
+      width: 90%;
+      margin-top: 18px;
+      margin-left: 10px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.1rem;
+      h3 {
+        font-size: 21px;
+        color: $med_blue;
+      }
+    }
+    .title_container {
+      width: 90%;
+      margin-top: 5px;
+      margin-left: 10px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      h1 {
+        font-size: 30px;
+        color: $med_blue;
+      }
+      .liner {
+        margin-left: 20px;
+        width: 50%;
+        border-top: 0.15px solid $vlite_blue;
+      }
+    }
+    .company_container {
+      width: 100%;
+      margin-top: 15px;
+      height: 50px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .companyCard {
+        width: 100px;
+        height: 100%;
+        font-family: $abel_font;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        letter-spacing: 0.13rem;
+        cursor: pointer;
+        margin-right: 18px;
+        border-bottom: 2px solid $vlite_blue;
+        color: $vlite_blue;
+        transition: $transition;
+      }
+      .lightning_border {
+        border-bottom: 2px solid $lightning;
+        color: $lightning;
+        opacity: 1;
+      }
+    }
+    @media screen and (min-width: 1000px) and (max-width: 1200px) {
+      width: 70%;
+    }
+    @media screen and (min-width: 700px) and (max-width: 999px) {
+      width: 82%;
+    }
+    @media screen and (min-width: 430px) and (max-width: 699px) {
+      width: 90%;
+      .title_container {
+        h1 {
+          font-size: 27px;
+        }
+      }
+    }
+    @media screen and (max-width: 429px) {
+      width: 90%;
+      .companyTitle {
+        h3 {
+          font-size: 16px;
+        }
+      }
+      .topic {
+        width: 88%;
+        // margin-left: px;
+        margin-top: 9px;
+      }
+      .Designation {
+        width: 96%;
+        h7 {
+          font-size: 14px;
+          letter-spacing: 0.08rem;
+        }
+      }
+      .title_container {
+        width: 95%;
+        h1 {
+          font-size: 24px;
+        }
+        .liner {
+          margin-left: 10px;
+          width: 40%;
+          border-top: 0.15px solid $vlite_blue;
+        }
+      }
+    }
+    @keyframes appearboard {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
