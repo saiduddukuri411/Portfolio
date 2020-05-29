@@ -7,6 +7,7 @@
     width: 65%;
     // border:1px solid white;
     margin-top: 50px;
+    animation: appear_resume 1s;
     .resumeHeader{
         width:100%;
         margin-top: 5px;
@@ -121,6 +122,13 @@
             .hidden{
                 display: none;
             
+        }
+    }
+    @keyframes appear_resume {
+        0%{
+            opacity: 0;
+        }100%{
+            opacity:1;
         }
     }
     }

@@ -1,6 +1,7 @@
 
 import hotel from "../../../images/hotel.PNG";
 import movie from "../../../images/movie.PNG";
+import ShareIt from "../../../images/shareit.PNG";
 const proj_data = [
   {
     id:1,
@@ -21,6 +22,16 @@ const proj_data = [
     git:"https://github.com/saiduddukuri411/MovieGoogler",
     img:movie,
     lang:['React','ES6+','MovieDB-API']
+  },
+  {
+    id:3,
+    name: "ShareIt",
+    link: "https://share-it.netlify.app/",
+    desc:
+      "This web app is under development!",
+    git:"https://github.com/saiduddukuri411/share_place",
+    img:ShareIt,
+    lang:['React','ES6+','Express','MongoDB']
   },
 ];
 export default proj_data
