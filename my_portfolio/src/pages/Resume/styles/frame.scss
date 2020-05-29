@@ -1,0 +1,127 @@
+@import '../../../colors.scss';
+.frame_container{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    .resume{
+    width: 65%;
+    // border:1px solid white;
+    margin-top: 50px;
+    .resumeHeader{
+        width:100%;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        .header_card{
+            .resumeIcon{
+                font-size: 18px;
+                color: $lightning;
+            }
+            h7{
+                font-family: $abel_font;
+                font-size: 16px;
+                letter-spacing: 0.13rem;
+                margin-left: 5px;
+                color: $vlite_blue;
+
+            }
+        }
+    }
+    .education{
+        width:100%;
+        margin-top: 25px;
+        
+        
+        h7{
+            
+            letter-spacing: 0.13rem;
+            font-size: 16px;
+            
+            .edu{
+                font-size: 21px;
+                color: $med_blue;
+                margin-right: 7px;
+            }
+           a{
+            .college{
+                font-family: $abel_font;
+                
+                color: $lightning;
+            }
+            text-decoration: none;
+        }
+        }
+    }
+    .work{
+        width: 100%;
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        color: $med_blue;
+        font-size: 21px;
+        letter-spacing: 0.12rem;
+    }
+    .companies{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .future{
+        width:80%;
+        display: flex;
+        justify-content: center;
+        margin:0 auto;
+        margin-top: 20px;
+        font-family: $abel_font;
+        font-size: 16px;
+        letter-spacing: 0.13rem;
+        color: $med_blue;
+
+    }
+    .resume{
+        width:100%;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        .button{
+            width:100px;
+            height: 40px;
+            border-radius: 5px;
+            border:0.5px solid $lightning;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h7{
+                font-family: $abel_font;
+                font-size: 16px;
+                color: $lightning;
+            }
+        }
+    }
+    @media screen  and (max-width:500px){
+        width: 85%;
+        .education{
+            display: flex;
+            flex-direction: column;
+            h7{
+                margin-bottom: 5px;
+                font-size: 15px;
+                .edu{
+                    font-size: 19px;
+                }
+            }
+        }
+        .work{
+            font-size: 19px;
+        }
+
+    }
+    @media screen and (max-width:900px){
+            .hidden{
+                display: none;
+            
+        }
+    }
+    }
+}

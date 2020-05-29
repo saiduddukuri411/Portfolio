@@ -1,0 +1,209 @@
+@import "../../../colors.scss";
+.project_container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  .projects {
+    width: 80%;
+    margin-top: 50px;
+    // border:1px solid white;
+    animation:appear 1s;
+    // border-top: 1px solid white;
+    .title_container {
+      width: 90%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      h1 {
+        font-size: 30px;
+        letter-spacing: 0.17rem;
+      }
+      .proj-liner {
+        width: 50%;
+        height: 100%;
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        .liner {
+          width: 100%;
+          border-top: 0.12px solid $vlite_blue;
+        }
+      }
+    }
+    .each_project {
+      width: 100%;
+      display: flex;
+    //   border:1px solid white;
+      position: relative;
+      margin-top: 42px;
+      margin-bottom:90px ;
+      .proj_image {
+        width: 550px;
+        height: 310px;
+        // border:1px solid white;
+
+        a {
+          img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            box-shadow: $box_shadow;
+            border-radius: 4px;
+          }
+        }
+        @media screen and (min-width:680px) and (max-width:950px){
+            width: 400px;
+        }
+        @media screen and (min-width:951px) and (max-width:1200px){
+            width: 570px;
+        }
+        
+
+      }
+      .proj_card {
+        position: absolute;
+        width: 500px;
+        height: 310px;
+        z-index: 20;
+        top: 0;
+        left: 400px;
+        // border: 1px solid white;
+        .proj_title {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 2px;
+          a {
+            text-decoration: none;
+            .pro_name {
+              color: $vlite_blue;
+              font-family: $abel_font;
+              font-size: 17px;
+              letter-spacing: 0.13rem;
+              span {
+                color: $lightning;
+              }
+            }
+          }
+        }
+        .des_container{
+            width:100%;
+            margin-top: 20px;
+            .desc{
+                width:100%;
+                height:130px;
+                background: $proj_bg;
+                border-radius: 4px;
+                box-shadow: $box_shadow;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h7{
+                    margin:0 15px;
+                    color: $proj_color;
+                    font-family: $abel_font;
+                    font-size: 16px;
+                    letter-spacing: 0.13rem;
+                }
+            }
+        }
+        .tech{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            h7{
+                margin:0 10px;
+                font-family: $abel_font;
+                font-size: 14px;
+                letter-spacing: 0.13rem;
+            }
+        }
+        .navigations{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 25px;
+            a{
+                .rIcon{
+                    color: $med_blue;
+                    margin:0 15px;
+                    font-size: 25px;
+                    @media screen and (min-width:1200px){
+                        &:hover{
+                            color: $lightning;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (min-width:680px) and (max-width:1000px){
+             left:160px;
+        }
+        @media screen and (min-width:1050px) and (max-width:1230px){
+             left:200px;
+        }
+        @media screen and (max-width:500px){
+          left:0;
+          top:0;
+          width: 330px;
+          height: 300px;
+          .proj_title {
+            a{
+              .pro_name{
+                color: $med_blue;
+              }
+            }
+          }
+          .des_container{
+            .desc{
+              background: transparent;
+              color: white;
+            }
+  
+          }
+          .tech{
+            h7{
+              color: $med_blue;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .each_project {
+        .proj_image {
+          width: 500px;
+          height: 300px;
+          
+          a {
+            img {
+              max-width: 100%;
+              max-height: 100%;
+              display: block;
+              opacity: 0.12;
+            }
+          }
+        }
+        
+      }
+      .title_container {
+        .proj-liner {
+          margin-left: 8px;
+          width: 37%;
+        }
+        h1 {
+          font-size: 23px;
+          letter-spacing: 0.12rem;
+        }
+      }
+      width: 90%;
+    }
+    @keyframes appear {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+  }
+}
