@@ -24,24 +24,27 @@
       border-top: 0.15px solid $vlite_blue;
     }
   }
-  .icons{
-      width:100vw;
+  .icons {
+    width: 100vw;
     //   border:1px solid white;
-      margin-top: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .each_icon{
-          font-size: 22px;
-          margin : 0 16px;
-          cursor: pointer;
-          @media screen and (min-width:1150px){
-              &:hover{
-                  color: $lightning;
-                  opacity: 0.8;
-              }
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon_link {
+      color: $vlite_blue;
+      .each_icon {
+        font-size: 22px;
+        margin: 0 16px;
+        cursor: pointer;
+        @media screen and (min-width: 1150px) {
+          &:hover {
+            color: $lightning;
+            opacity: 0.8;
           }
+        }
       }
+    }
   }
   @media screen and (max-width: 680px) {
     margin-top: 30px;

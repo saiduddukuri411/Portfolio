@@ -19,7 +19,7 @@ const Resumeframe = () => {
           </div>
           <div className="header_card hidden">
             <AiOutlineMail className="resumeIcon " />
-            <h7>sai.duddukuri@gmail.com</h7>
+            <h7>duddukurisai1@gmail.com</h7>
           </div>
         </div>
         <div className="education">
