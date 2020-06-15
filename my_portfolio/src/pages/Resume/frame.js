@@ -3,6 +3,7 @@ import "./styles/frame.scss";
 import { FaUserGraduate } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
+import Resume from "./components/files/Resume.pdf";
 
 const Resumeframe = () => {
   return (
@@ -51,9 +52,14 @@ const Resumeframe = () => {
           </h7>
         </div>
         <div className="resume">
-            <div className="button">
-                <h7>Resume</h7>
-            </div>
+          <div
+            className="button"
+            onClick={() => {
+              window.open(Resume);
+            }}
+          >
+            <h7>Resume</h7>
+          </div>
         </div>
       </div>
     </section>
