@@ -1,6 +1,7 @@
 import hotel from "../../../images/hotel.PNG";
 import movie from "../../../images/movie.PNG";
 import ShareIt from "../../../images/shareit.PNG";
+import Chatter from "../../../images/chatter.PNG"; 
 const proj_data = [
   {
     id: 1,
@@ -24,6 +25,16 @@ const proj_data = [
   },
   {
     id: 3,
+    name: "ChatterBox",
+    link: "https://chatterbox-5b1c4.web.app/",
+    desc:
+      "Chatterbox is a text messaging web app, built on MERN. User can create their private rooms and share their credentials. Chatterbox allows for messages on both desktop and mobile devices.",
+    git: "https://github.com/saiduddukuri411/chatterBox",
+    img: Chatter,
+    lang: ["React" , "Express", "MongoDB", "Socket.IO"],
+  },
+  {
+    id: 4,
     name: "ShareIt",
     link: "https://shareit-2ff49.web.app/",
     desc:
