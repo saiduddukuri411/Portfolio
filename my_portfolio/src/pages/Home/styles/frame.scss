@@ -179,7 +179,9 @@
         .technologies {
           width: 100%;
           // height: 45px;
+          max-width: 600px;
           // border:1px solid white;
+          flex-wrap: wrap;
           margin-top: 10px;
           display: flex;
           align-items: center;
@@ -191,6 +193,7 @@
             justify-content: center;
             margin-left: 5px;
             margin-right: 5px;
+            margin-bottom: 12px;
             .right_icon {
               color: $lightning;
               font-size: 20px;
@@ -198,6 +201,7 @@
             h7 {
               font-size: 13px;
               letter-spacing: 0.14rem;
+              width: 100%;
             }
           }
         }

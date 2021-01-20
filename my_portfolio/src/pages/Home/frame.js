@@ -1,7 +1,20 @@
 import React from "react";
 import "./styles/frame.scss";
 import image from "../../images/Profile.jpg";
-import {IoMdArrowDropright} from 'react-icons/io';
+import { IoMdArrowDropright } from "react-icons/io";
+
+const technologies = [
+  "Javascript(ES6+)",
+  "HTML5 & CSS3",
+  "React",
+  "Python",
+  "NodeJs",
+  "Express",
+  "Graphql",
+  "postgreSQL",
+  "MongoDB",
+  "Prisma"
+];
 
 const Frame = () => {
   return (
@@ -29,43 +42,32 @@ const Frame = () => {
             </div>
             <div className="content1">
               <p>
-                I am a software engineer based in
-                Indianapolis. Currently, I am pursuing my masters degree from&nbsp;<span>Purdue University</span>.
+                I am a software engineer based in Indianapolis. Currently, I am
+                pursuing my masters degree from&nbsp;
+                <span>Purdue University</span>.
               </p>
             </div>
             <div className="content1">
               <p>
                 I enjoy building things that live on web.In particular I deal
                 with web apps using <span>React</span>. Besides my education, I
-                also build applications for&nbsp;<span>Purdue</span>. My
-                passion drives me to work on wide varieties of technologies and
-                my goal is to provide performant experience products.
+                also build applications for&nbsp;<span>Purdue</span>. My passion
+                drives me to work on wide varieties of technologies and my goal
+                is to provide performant experience products.
               </p>
             </div>
             <div className="content1">
               <p>Below are a few technologies I am currently woking with:</p>
             </div>
             <div className="technologies">
-              <div className="tech_cards">
-                 <IoMdArrowDropright  className="right_icon" />
-                 <h7>Javascript (ES6+)</h7>
-              </div>
-              <div className="tech_cards">
-                 <IoMdArrowDropright  className="right_icon" />
-                 <h7>HTML5 & (S)CSS</h7>
-              </div>
-              <div className="tech_cards">
-                 <IoMdArrowDropright  className="right_icon" />
-                 <h7>Python</h7>
-              </div>
-              <div className="tech_cards">
-                 <IoMdArrowDropright  className="right_icon" />
-                 <h7>React</h7>
-              </div>
-              <div className="tech_cards">
-                 <IoMdArrowDropright  className="right_icon" />
-                 <h7>Node JS</h7>
-              </div>
+              {technologies.map((tech) => {
+                return (
+                  <div className="tech_cards">
+                    <IoMdArrowDropright className="right_icon" />
+                    <h7>{tech}</h7>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
